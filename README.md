@@ -60,7 +60,7 @@ Then:
 
     python3 User_Interface.py
 
-Please be aware that this simulation is using front_laser instead of using Velodyne-16, you may need to change Navigation_Laser.py to do relevant testing. For example, "/scan" in Line 25 can be changed to "front/scan" and in the navigation_robot_laser_sensor function, the parameters can be changed as well, please refer to LIDAR ranges.
+Please be aware that this simulation is using front_laser instead of using Velodyne-16, you may need to change Navigation_Laser.py to do relevant testing. For example, "/scan" in Line 25 can be changed to "front/scan" and in the navigation_robot_laser_sensor function, the parameters can be changed as well, please refer to LIDAR ranges.txt.
 
 Now you can access the user interface of the system. It looks like below.
 
