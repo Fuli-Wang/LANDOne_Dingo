@@ -19,23 +19,22 @@ First, ensure that Dingo and your PC/Laptop are running properly and on the same
 
 Now you can access the user interface of the system. It looks like below.
 
-"################################################################################\n"
-                       "    \nDingo Control \n\n"
-                       "################################################################################\n"
-                       "\n  - 1: Launch the Perception System:\n"
-                       "\n  - 2: Basic Navigation:\n"
-                       "\n  - 3: Target-Following Guider for mobile robot:\n"
-                       "\n  - 4: Directly approaching to the target(camera only):\n"
-                       "\n  - 5: Approaching to the target with camera feedback loop:\n"
-                       "\n  - 6: Approaching to the target with collision avoidance(camera + LIDAR):\n "
-                       "\n  - 7: Move based on the map:\n "
-                       "\n  - 8: Alignment based on the camera:\n "
-                       "\n  - 9: Recognizing the state of moving objects (under development)\n"
-                       "\n  - 10: Exit\n \n"
-                       "################################################################################\n"
-                       "\n"
-                       "################################################################################\n"
-                       "\n \n  - Option: "
+"################################################################################"
+
+" Dingo Control "
+
+ "################################################################################
+ - 1: Launch the Perception System:
+ - 2: Basic Navigation
+ - 3: Target-Following Guider for mobile robot
+ - 4: Directly approaching to the target(camera only)
+ - 5: Approaching the target with a camera feedback loop
+ - 6: Approaching the target with collision avoidance(camera + LIDAR)
+ - 7: Move based on the map
+ -  8: Alignment based on the camera
+ -  9: Recognizing the state of moving objects (under development)
+ -  10: Exit
+   ################################################################################
 
 
     
