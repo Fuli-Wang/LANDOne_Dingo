@@ -60,15 +60,19 @@ Now you can access the user interface of the system. It looks like below.
 
 ###############################################################################
 
- Press 1 to launch the basic perception system via the ZED camera to detect/localise the person. When this perception system is turned on, you can continue to enter in the user interface terminal:
+ Press 1 to launch the basic perception system via the ZED camera to detect/localise the person. When this perception system is turned on/activated, you can continue to use the user interface terminal:
 
-2 (using the keyboard to control the robot), 3 (the robot will follow the nearest person in the field of view), 4 (approaching the target directly), 5 (approaching the target based on the camera's real-time feedback).
+2 (using the keyboard to control the robot), 3 (the robot will follow the nearest person in the field of view), 4 (approaching the target directly), and 5 (approaching the target based on the camera's real-time feedback).
 
 Function 6 is needed to activate LIDAR first, you need to open a new terminal:
 
     roslaunch velodyne_pointcloud VLP16_points.launch
 
-Function 7 (not recommended use): the robot will move based on the SLAM and path planning algorithm's output. This function is more focused on research, it needs to use SLAM to map the environment and use a path planning algorithm to generate the path, the robot will move based on the path. There some path planing algorithm is provided in /
+Function 7 (not recommended use): the robot will move based on the SLAM and path planning algorithm's output. This function is more focused on research, it needs to use SLAM to map the environment and use a path planning algorithm to generate the path, the robot will move based on the path. There is an example of a path planning algorithm in /path planning.
+
+Function 8: This function uses the camera to detect/localise a QR code and the robot will do the alignment (make sure the QR code is in the central view of the robot). Please shut down function 1 (no need to activate  perception function), as the function will automatical load and open the required perception algorithm.
+
+Function 9: This function uses the camera to detect/localise the moving object, the robot will stop or continue the movement based on the object's status. Please shut down function 1 (no need to activate  perception function), as the function will automatical load and open the required perception algorithm. (research phase, it is currently possible to recognize dynamic humans).
  
 
 
