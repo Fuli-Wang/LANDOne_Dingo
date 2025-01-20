@@ -39,6 +39,7 @@ For calibration of the IMU, you may need to install and use a tool to complete i
 
 # Interfacing with Dingo
 option 1 (interface with physical robot): 
+
 First, ensure that Dingo and your PC/Laptop are running properly and on the same LAN (WiFi). The remote-dingoA.sh file can be configured as required. Then in your PC terminal：
 
     source remote-dingoA.sh
@@ -46,6 +47,7 @@ First, ensure that Dingo and your PC/Laptop are running properly and on the same
     python3 User_Interface.py
 
 option 2 (interface with simulated robot): 
+
 Besides interfacing with physical robots, highly recommended to use the simulation environment to do testing. No need to configure IP, just launch the simulator and run the User Interface:
 
 If you want to use an omnidirectional drive Dingo in simulation, run:
