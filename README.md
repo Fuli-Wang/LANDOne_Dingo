@@ -20,9 +20,7 @@ First, ensure that Dingo and your PC/Laptop are running properly and on the same
 Now you can access the user interface of the system. It looks like below.
 
 "################################################################################"
-
-" Dingo Control "
-
+ Dingo Control 
  "################################################################################
  - 1: Launch the Perception System:
  - 2: Basic Navigation
@@ -34,7 +32,7 @@ Now you can access the user interface of the system. It looks like below.
  -  8: Alignment based on the camera
  -  9: Recognizing the state of moving objects (under development)
  -  10: Exit
-   ################################################################################
+    ###############################################################################
 
 
     
