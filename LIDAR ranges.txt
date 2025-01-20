@@ -1,0 +1,57 @@
+
+For VLP16
+
+
+        #### Back ####
+
+        self.laser_back = self.laser_data[0]
+        self.laser_back_obstacles = self.laser_data[0:111]+self.laser_data[784:897]
+        self.laser_back_range = np.array(self.laser_back_obstacles)
+        self.laser_back_average = np.mean(self.laser_back_range[np.isfinite(self.laser_back_range)])
+
+        #### Right ####
+
+        self.laser_right = self.laser_data[112]
+        self.laser_right_obstacles = self.laser_data[112:335]
+        self.laser_right_range = np.array(self.laser_right_obstacles)
+        self.laser_right_average = np.mean(self.laser_right_range[np.isfinite(self.laser_right_range)])
+                
+        #### Front ####
+
+        self.laser_front = self.laser_data[336]
+        self.laser_front_obstacles = self.laser_data[336:559]
+        self.laser_front_range = np.array(self.laser_front_obstacles)
+        self.laser_front_average = np.mean(self.laser_front_range[np.isfinite(self.laser_front_range)])
+
+
+        #### Left ####
+
+        self.laser_left = self.laser_data[560]
+        self.laser_left_obstacles = self.laser_data[560:783]
+        self.laser_left_range = np.array(self.laser_left_obstacles)
+        self.laser_left_average = np.mean(self.laser_left_range[np.isfinite(self.laser_left_range)])
+        
+        
+        
+For simulation: /front/scan
+
+        #### Right ####
+
+        self.laser_right = self.laser_data[0]
+        self.laser_right_obstacles = self.laser_data[0:239]
+        self.laser_right_range = np.array(self.laser_right_obstacles)
+        self.laser_right_average = np.mean(self.laser_right_range[np.isfinite(self.laser_right_range)])
+        
+        #### Front ####
+
+        self.laser_front = self.laser_data[240]
+        self.laser_front_obstacles = self.laser_data[240:479]
+        self.laser_front_range = np.array(self.laser_front_obstacles)
+        self.laser_front_average = np.mean(self.laser_front_range[np.isfinite(self.laser_front_range)])
+
+        #### Left ####
+
+        self.laser_left = self.laser_data[480]
+        self.laser_left_obstacles = self.laser_data[480:720]
+        self.laser_left_range = np.array(self.laser_left_obstacles)
+        self.laser_left_average = np.mean(self.laser_left_range[np.isfinite(self.laser_left_range)])
