@@ -26,8 +26,12 @@ Recommended install gmapping for testing:
 IMU(3DM-CV7-AHRS):
 
     sudo apt-get update && sudo apt-get install ros-noteic-microstrain-inertial-driver
+
+To activate the IMU, open a new terminal:
+
+    roslaunch microstrain_inertial_driver microstrain.launch params_file:=Calibration/IMU/my_params.yml
     
-For calibration of the IMU, you may need to install and use a tool to complete it. For example, you can install [Ceres Solver](https://www.stereolabs.com/en-gb/developers) and [code_utils](https://github.com/gaowenliang/code_utils) Then install and use this tool for calibration: [imu_utils](https://github.com/gaowenliang/imu_utils) 
+For calibration of the IMU, you may need to install and use a tool to complete it. For example, you can install [Ceres Solver](https://www.stereolabs.com/en-gb/developers) and [code_utils](https://github.com/gaowenliang/code_utils) Then install and use this tool for calibration: [imu_utils](https://github.com/gaowenliang/imu_utils) Then you can calibrate the IMU and update the cv7_imu_param.yaml in Calibration/IMU. This would help use SLAM via LIDAR and IMU, refer: [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM)
 
 # Interfacing with Dingo
 First, ensure that Dingo and your PC/Laptop are running properly and on the same LAN (WiFi). The remote-dingoA.sh file can be configured as required. Then in your PC terminal：
@@ -61,7 +65,9 @@ Now you can access the user interface of the system. It looks like below.
 
 Function 6 is needed to activate LIDAR:
 
-    sudo apt-get update && sudo apt-get install ros-noteic-microstrain-inertial-driver
+    roslaunch velodyne_pointcloud VLP16_points.launch
+
+Function 7: the robot will move based on the SLAM and path planning algorithm's output.
  
 
 
