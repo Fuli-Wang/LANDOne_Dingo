@@ -12,7 +12,7 @@ More information about the Dingo's basic tutorial: [Dingo Tutorila](https://docs
 
 # Sensors of our platform:
 
-![platform]((https://github.com/Fuli-Wang/LANDOne_Dingo/blob/main/platform.jpg)
+![platform](https://github.com/Fuli-Wang/LANDOne_Dingo/blob/main/platform.jpg)
 
 For the ZED camera, please install the SDK: [ZED SDK](https://www.stereolabs.com/en-gb/developers) and the required CUDA toolkit.
 
