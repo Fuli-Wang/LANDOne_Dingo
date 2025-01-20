@@ -64,11 +64,11 @@ Now you can access the user interface of the system. It looks like below.
 
 2 (using the keyboard to control the robot), 3 (the robot will follow the nearest person in the field of view), 4 (approaching the target directly), 5 (approaching the target based on the camera's real-time feedback).
 
-Function 6 is needed to activate LIDAR:
+Function 6 is needed to activate LIDAR first, you need to open a new terminal:
 
     roslaunch velodyne_pointcloud VLP16_points.launch
 
-Function 7: the robot will move based on the SLAM and path planning algorithm's output.
+Function 7 (not recommended use): the robot will move based on the SLAM and path planning algorithm's output. This function is more focused on research, it needs to use SLAM to map the environment and use a path planning algorithm to generate the path, the robot will move based on the path. There some path planing algorithm is provided in /
  
 
 
