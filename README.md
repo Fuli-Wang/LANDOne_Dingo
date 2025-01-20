@@ -57,6 +57,7 @@ Now you can access the user interface of the system. It looks like below.
  - 8: Alignment based on the camera
  - 9: Recognizing the state of moving objects (under development)
  - 10: Exit
+
 ###############################################################################
 
  Press 1 to launch the basic perception system via the ZED camera to detect/localise the person. When this perception system is turned on, you can continue to enter in the user interface terminal:
