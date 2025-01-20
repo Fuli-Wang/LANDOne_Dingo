@@ -1,0 +1,20 @@
+sudo apt-get update && sudo apt-get install ros-noteic-microstrain-inertial-driver 
+
+
+  
+  
+  %Calibration:
+  
+    Install csres-solver: http://www.ceres-solver.org/installation.html#linux   or https://ceres-solver.googlesource.com/ceres-solver/+/1.14.0
+    Install code-utils: https://github.com/gaowenliang/code_utils
+    Install imu-utils: https://github.com/gaowenliang/imu_utils
+    
+    RUN: roslaunch microstrain_inertial_driver microstrain.launch params_file:=Calibration/IMU/my_params.yml #to activate IMU
+    
+    Then check ros topic
+    
+    Run: roslaunch imu_utils cv7.launch #you need to rename a launch file and changed a little bit for our cv7 IMU
+    
+    Recording: rosbag record -o 20211117.bag out /velodyne_points /cv7/imu/data #you need to activate LIDA and IMU
+    
+    Run: roslaunch lidar_align lidar_align.launch
