@@ -40,7 +40,7 @@ class User_Interface:
 
     def launch_perception_system(self):
 
-        file_to_execute = "perception/"
+        file_to_execute = "/perception/"
         os.chdir(file_to_execute)
         subprocess.call(["gnome-terminal", "--", "python3", "zed_yolov8.py"])
 
@@ -59,7 +59,7 @@ class User_Interface:
     def navigation_alignment(self):
 
         print("\n Switch the required perception model\n")
-        file_to_execute = "perception/"
+        file_to_execute = "/perception/"
         os.chdir(file_to_execute)
         subprocess.call(["gnome-terminal", "--", "python3", "ali_yolov8.py"])
         time.sleep(15.0)
