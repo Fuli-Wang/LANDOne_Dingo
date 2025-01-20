@@ -14,7 +14,7 @@ Sensors of our platform:
 
 For the ZED camera, please install the SDK: [ZED SDK](https://www.stereolabs.com/en-gb/developers) and the required CUDA toolkit.
 
-LIDAR(velodyne-16):
+LIDAR(Velodyne-16):
 
     sudo apt-get install ros-noetic-velodyne
     
@@ -31,14 +31,30 @@ To activate the IMU, open a new terminal:
 
     roslaunch microstrain_inertial_driver microstrain.launch params_file:=Calibration/IMU/my_params.yml
     
-For calibration of the IMU, you may need to install and use a tool to complete it. For example, you can install [Ceres Solver](https://www.stereolabs.com/en-gb/developers) and [code_utils](https://github.com/gaowenliang/code_utils) Then install and use this tool for calibration: [imu_utils](https://github.com/gaowenliang/imu_utils) Then you can calibrate the IMU and update the cv7_imu_param.yaml in Calibration/IMU. This would help use SLAM via LIDAR and IMU, refer: [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM)
+For calibration of the IMU, you may need to install and use a tool to complete it. For example, you can install [Ceres Solver](https://www.stereolabs.com/en-gb/developers) and [code_utils](https://github.com/gaowenliang/code_utils) Then install and use this tool for calibration: [imu_utils](https://github.com/gaowenliang/imu_utils) Then you can calibrate the IMU and update the cv7_imu_param.yaml in Calibration/IMU. This would help to use SLAM via LIDAR and IMU, refer: [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM)
 
 # Interfacing with Dingo
+option 1 (interface with physical robot): 
 First, ensure that Dingo and your PC/Laptop are running properly and on the same LAN (WiFi). The remote-dingoA.sh file can be configured as required. Then in your PC terminal：
 
     source remote-dingoA.sh
 
     python3 User_Interface.py
+
+option 2 (interface with simulated robot): 
+Besides interfacing with physical robots, highly recommended to use the simulation environment to do testing. No need to configure IP, just launch the simulator and run the User Interface:
+
+If you want to use an omnidirectional drive Dingo in simulation, run:
+
+    export DINGO_OMNI=1
+    
+Then:
+
+    roslaunch dingo_gazebo dingo_world.launch config:=front_laser
+
+    python3 User_Interface.py
+
+Please be aware that this simulation is using front_laser instead of using Velodyne-16, you may need to change Navigation_Laser.py to do relevant testing. For example, "/scan" in Line 25 can be changed to "front/scan" and in the function navigation_robot_laser_sensor, the parameters can be changed as well, please refer to LIDAR ranges.
 
 Now you can access the user interface of the system. It looks like below.
 
