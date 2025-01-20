@@ -2,10 +2,6 @@
 #!/bin/bash
 import os
 import subprocess
-
-#print("\n Which robot are you using now?\n")
-#robot_input = input("Select 1 for Robot A, 0 for Robot B: \n")
-
 import time
 import Navigation, Navigation_Basic, Navigation_Laser, Navigation_Alignment, Navigation_Dynamic
 import rospy
@@ -44,7 +40,7 @@ class User_Interface:
 
     def launch_perception_system(self):
 
-        file_to_execute = "/home/fuli/Documents/yolov8/"
+        file_to_execute = "perception/"
         os.chdir(file_to_execute)
         subprocess.call(["gnome-terminal", "--", "python3", "zed_yolov8.py"])
 
@@ -63,7 +59,7 @@ class User_Interface:
     def navigation_alignment(self):
 
         print("\n Switch the required perception model\n")
-        file_to_execute = "/home/fuli/Documents/yolov8/"
+        file_to_execute = "perception/"
         os.chdir(file_to_execute)
         subprocess.call(["gnome-terminal", "--", "python3", "ali_yolov8.py"])
         time.sleep(15.0)
@@ -72,7 +68,7 @@ class User_Interface:
     def navigation_dynamic(self):
 
         print("\n Switch the required perception model \n")
-        file_to_execute = "/home/fuli/Documents/yolov8/"
+        file_to_execute = "/perception/movement detection/"
         os.chdir(file_to_execute)
         subprocess.call(["gnome-terminal", "--", "python3", "zed_yolov11_movement_ros.py"])
         time.sleep(15.0)
