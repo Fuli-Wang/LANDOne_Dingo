@@ -79,7 +79,7 @@ Now you can access the user interface of the system. It looks like below.
  - 6: Approaching the target with collision avoidance(camera + LIDAR)
  - 7: Move based on the map
  - 8: Alignment based on the camera
- - 9: Recognizing the state of moving objects (under development)
+ - 9: Recognizing the state of moving objects
  - 10: Exit
 
 ###############################################################################
