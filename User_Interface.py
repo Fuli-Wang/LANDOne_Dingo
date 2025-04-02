@@ -42,7 +42,7 @@ class User_Interface:
 
         file_to_execute = "perception/"
         os.chdir(file_to_execute)
-        subprocess.call(["gnome-terminal", "--", "python3", "zed_yolov8.py"])
+        subprocess.call(["gnome-terminal", "--", "python3", "zed_yolov11.py"])
 
     def human_following(self):
 
