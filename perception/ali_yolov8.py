@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# this is for alignment testing
 import rospy
 from geometry_msgs.msg import Point
 import pyzed.sl as sl
