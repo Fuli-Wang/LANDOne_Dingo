@@ -1,5 +1,5 @@
 # LANDOne_Dingo
-The Dingo mobile robot system based on ROS1
+The Dingo mobile robot system based on ROS1 (An_Intelligent_Human_Aware_Robot_System_for_Recognizing_and_Responding_to_Human_Movements)
 
 # Dependency
 This is the ROS1 (Noetic) implementation based on Ubuntu 20.04
