@@ -94,7 +94,7 @@ Function 7 (not recommended use): the robot will move based on the SLAM and path
 
 Function 8: This function uses the camera to detect/localise a QR code and the robot will do the alignment (make sure the QR code is in the central view of the robot). Please shut down function 1 (no need to activate  perception function), as the function will automatical load and open the required perception algorithm.
 
-Function 9: This function uses the camera to detect/localise the moving object, the robot will stop or continue the movement based on the object's status. Please shut down function 1 (no need to activate  perception function), as the function will automatical load and open the required perception algorithm. (research phase, it is currently possible to recognize dynamic humans).
+Function 9: This function uses the camera to detect/localise the moving object, the robot will stop or continue the movement based on the object's status. Please shut down function 1 (no need to activate  perception function), as the function will automatical load and open the required perception algorithm. (under optimization, it is currently to recognize dynamic humans).
  
 
 
