@@ -10,7 +10,7 @@ To get started with the Dingo simulation, make sure you have a working ROS insta
 
     sudo apt-get install ros-noetic-dingo-simulator ros-noetic-dingo-desktop
 
-More information about the Dingo's basic tutorial: [Dingo Tutorila](https://docs.clearpathrobotics.com/docs/ros1noetic/robots/indoor_robots/dingo/tutorials_dingo#simulating-dingo).
+More information about the Dingo's basic tutorial: [Dingo Tutorila](https://www.clearpathrobotics.com/assets/guides/noetic/dingo/Installing.html).
 
 # Sensors of our platform:
 
