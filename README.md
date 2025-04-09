@@ -37,7 +37,7 @@ To activate the IMU, open a new terminal:
 
     roslaunch microstrain_inertial_driver microstrain.launch params_file:=Calibration/IMU/my_params.yml
     
-For calibration of the IMU, you may need to install and use a tool to complete it. For example, you can install dependencies [Ceres Solver](https://www.stereolabs.com/en-gb/developers) and [code utils](https://github.com/gaowenliang/code_utils) . Then install and use this tool for calibration: [imu utils](https://github.com/gaowenliang/imu_utils). Finally, you can calibrate the IMU and update the cv7_imu_param.yaml in Calibration/IMU. This would help to use SLAM via LIDAR and IMU, refer: [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM)
+For calibration of the IMU, you may need to install and use a tool to complete it. For example, you can install dependencies [Ceres Solver](https://github.com/ceres-solver/ceres-solver) and [code utils](https://github.com/gaowenliang/code_utils) . Then install and use this tool for calibration: [imu utils](https://github.com/gaowenliang/imu_utils). Finally, you can calibrate the IMU and update the cv7_imu_param.yaml in Calibration/IMU. This would help to use SLAM via LIDAR and IMU, refer: [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM)
 
 # Interfacing with Dingo
 option 1 (interface with physical robot): 
