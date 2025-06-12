@@ -92,7 +92,7 @@ Function 6 is needed to activate LIDAR first, you need to open a new terminal:
 
     roslaunch velodyne_pointcloud VLP16_points.launch
 
-Function 7 (not recommended use): the robot will move based on the SLAM and path planning algorithm's output. This function is in the research phase, it needs to use SLAM to map the environment and use a path planning algorithm to generate the path, the robot will move based on the path. There is an example of a path planning algorithm in /path planning.
+Function 7: the robot will move based on the SLAM and path planning algorithm's output. This function is in the research phase, it needs to use SLAM to map the environment and use a path planning algorithm to generate the path, the robot will move based on the path. There is an example of a path planning algorithm in /path planning.
 
 Function 8: This function uses the camera to detect/localise a QR code and the robot will do the alignment (make sure the QR code is in the central view of the robot). Please shut down function 1 (no need to activate  perception function), as the function will automatical load and open the required perception algorithm.
 
