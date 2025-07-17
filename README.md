@@ -24,7 +24,7 @@ LIDAR(Velodyne-16):
 
     sudo apt-get install ros-noetic-velodyne
     
-Recommended install gmapping for testing:
+Recommend installing gmapping for testing:
 
     sudo apt-get install ros-noetic-gmapping
     sudo apt-get install ros-noetic-laser-scan-matcher
